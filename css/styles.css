@@ -2,6 +2,112 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: url('../images/2641159.gif') no-repeat center center fixed;
     background-size: cover;
+}
+
+
+/* Style the browser mockup container */
+.browser-mockup {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fefefe;
+    border: 1px solid #afafaf;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Style the browser header */
+.browser-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #c6dfff;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the browser buttons */
+.browser-btn {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Style the URL bar */
+.url-bar {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the browser content area */
+.browser-content {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Style the links as buttons */
+.buttons {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.browser-link {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.browser-link:hover {
+    background-color: #0056b3;
+}
+
+/* Style the welcome heading */
+.welcome-heading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the container that holds bullet points and playlist */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Style the bullet points */
+.bullet-points {
+    list-style-type: disc;
+    margin-top: 20px;
+    padding-left: 40px; /* Indent bullet points */
+}
+
+/* Style the playlist container */
+.playlist-container {
+    margin-left: 20px;
+}
+
+/* Style the sections */
+.section {
+    display: none;
+}
+
+/* Example to show the first section, you can change this logic as needed */
+.section:first-child {
+    display: block;
 }
