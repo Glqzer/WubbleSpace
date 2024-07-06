@@ -18,7 +18,9 @@ body {
     border: 1px solid #afafaf;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow-y: auto; /* Use 'auto' instead of 'visible' */
+    overflow-x: hidden;
+    max-height: 80vh; /* Limit the maximum height to 80% of the viewport height */
 }
 
 /* Style the browser header */
