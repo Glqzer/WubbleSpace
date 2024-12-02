@@ -179,3 +179,33 @@ body {
     line-height: 1.5;
     text-align: left;
 }
+
+.socialscontainer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.socialsbutton {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    font-family: Josefin Sans, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #d88eff;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.socialsbutton-spotify { background-color: #2d691d; }
+.socialsbutton-twitter { background-color: #1da1f2; }
+.socialsbutton-discord { background-color: #34393c; }
+.socialsbutton-instagram { background-color: #e1306c; }
+.socialsbutton-lastfm { background-color: #ff0000; }
+
