@@ -1,3 +1,40 @@
+@font-face {
+    font-family: 'Gaegu';
+    src: url('../fonts/Gaegu-Regular.ttf') format('truetype');
+    font-weight: 400; /* Normal/Regular weight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gaegu';
+    src: url('../fonts/Gaegu-Light.ttf') format('truetype');
+    font-weight: 300; /* Light weight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gaegu';
+    src: url('../fonts/Gaegu-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'DeliusSwashCaps';
+    src: url('../fonts/DeliusSwashCaps-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Jua';
+    src: url('../fonts/Jua-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+
 body {
     margin: 0;
     padding: 0;
@@ -87,8 +124,10 @@ body {
 /* Style the welcome heading */
 .welcome-heading {
     text-align: center;
-    margin-top: 20px;
-    font-family: 'Gill Sans', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Jua';
+    font-size: 50px;
 }
 
 /* Style the container that holds bullet points and playlist */
@@ -107,7 +146,7 @@ body {
 
 /* Style current obsession */
 .current-obsession {
-    font-family: 'Courier New', monospace;
+    font-family: 'Gaegu', cursive;
     text-shadow: 5px 5px 10px #463dff;
     background-color: #d4bfdf;
     text-align: center;
@@ -127,7 +166,7 @@ body {
     padding-left: 20px; /* Indent bullet points */
     text-align: left;
     color: #24658A;
-    font-family: 'Bitter', sans-serif;
+    font-family: 'DeliusSwashCaps';
     padding-right: 20px;
     letter-spacing: 0.05rem;
     width: calc(100% + 0.05rem);
@@ -209,3 +248,71 @@ body {
 .socialsbutton-instagram { background-color: #e1306c; }
 .socialsbutton-lastfm { background-color: #ff0000; }
 
+.navbar {
+    background: #5e63ff;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    display: inline;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-family: 'Gaegu', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #575757;
+  }
+  
+  /* Mobile styling */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-list {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      background-color: #333;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .nav-item {
+      margin: 5px 0;
+    }
+  
+    .nav-list.show {
+      display: flex;
+    }
+  }
